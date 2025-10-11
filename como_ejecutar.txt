@@ -1,0 +1,24 @@
+1. Crea el entorno virtual
+    python -m venv venv
+2. Activa el entorno virtual
+    ejemplo cd venv\scripts\activate.bat
+3. Instala las dependencias
+    pip install -r requirements.txt
+4. Has la prueba de las etiquetas
+
+    python test_etiquetas.py
+
+    Debe salirte algo asi
+        Condiciones corporales detectadas: ['delgado', 'normal', 'obeso']
+        Mapeo de índices: {'delgado': 0, 'normal': 1, 'obeso': 2}
+        Ejemplo -> Imagen tamaño: torch.Size([3, 224, 224]), Condición corporal (índice): 0, Nombre: delgado
+        Total de imágenes en el dataset: 658
+5. Realiza el entrenamiento del modelo
+    Va a demorar bastante de 2 a 3 horas aproximadamente o quizas mas
+    se debe ejecutar hasta el spoch 10
+
+    python training_model.py
+
+    Una ves terminado el entrenamiento debe aparecer un modelo entrenado asi
+    dog_body_condition_classifier.pth
+    Y listo.
