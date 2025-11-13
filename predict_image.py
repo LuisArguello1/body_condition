@@ -8,7 +8,7 @@ import os
 # CONFIGURACIÓN
 # =====================
 # 🔸 CAMBIA AQUÍ LA RUTA DE TU IMAGEN 🔸
-IMAGE_PATH = "img/imagen9.webp"  # ← Pon aquí la ruta de tu imagen
+IMAGE_PATH = "img/imagen10.jpg"  # ← Pon aquí la ruta de tu imagen
 
 NUM_CLASSES = 3  # delgado, normal, obeso
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
